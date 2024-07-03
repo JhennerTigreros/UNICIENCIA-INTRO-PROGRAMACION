@@ -25,27 +25,6 @@ my_cat = Cat()
 animal_sound(my_dog)  # Output: Woof!
 animal_sound(my_cat)  # Output: Meow!
 
-# Enums in Python
-# Enums (Enumerations) are a way to define a set of named values. Enums are used to represent fixed sets of constants.
-
-from enum import Enum, auto
-
-class Color(Enum):
-    RED = auto()
-    GREEN = auto()
-    BLUE = auto()
-
-print(Color.RED)  # Output: Color.RED
-print(Color.GREEN)  # Output: Color.GREEN
-print(Color.BLUE)  # Output: Color.BLUE
-
-# Accessing enum members and their values
-print(Color.RED.name)  # Output: RED
-print(Color.RED.value)  # Output: 1 (auto assigns an integer value starting from 1)
-
-# Iterating through an enum
-for color in Color:
-    print(color)
 
 # Reusing Code
 # Reusing code involves creating reusable functions, classes, or modules to avoid redundancy and improve maintainability.
@@ -104,3 +83,25 @@ result_subtract = subtract(10, 5)
 
 print(result_add)  # Output: 15
 print(result_subtract)  # Output: 5
+
+# Enums in Python
+# Enums (Enumerations) are a way to define a set of named values. Enums are used to represent fixed sets of constants.
+
+from enum import Enum, auto
+
+class Color(Enum):
+    RED = auto()
+    GREEN = auto()
+    BLUE = auto()
+
+print(Color.RED)  # Output: Color.RED
+print(Color.GREEN)  # Output: Color.GREEN
+print(Color.BLUE)  # Output: Color.BLUE
+
+# Accessing enum members and their values
+print(Color.RED.name)  # Output: RED
+print(Color.RED.value)  # Output: 1 (auto assigns an integer value starting from 1)
+
+# Iterating through an enum
+for color in Color:
+    print(color)
